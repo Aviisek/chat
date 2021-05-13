@@ -1,6 +1,6 @@
 export const flow = {
     1 : {
-        question : "Welcome to Engel & Völkers! How can we help you?",
+        question : "Welcome to our company! How can we help you?",
         options : {
             0 : {
                 val : "Market my real estate",
