@@ -12,11 +12,11 @@ export const flow = {
             },
             2 : {
                 val : "Join engel and volkers",
-                next: "3"
+                next: "8"
             },
             3 : {
                 val : "Others",
-                next: "4"
+                next: "7"
             }
         }
     },
@@ -55,11 +55,11 @@ export const flow = {
         options : {
             0 : {
                 val : "Barcelona",
-                next: "6"
+                next: "8"
             },
             1 : {
                 val : "Hamburg",
-                next: "6"
+                next: "8"
             }
         }
     },
@@ -68,11 +68,11 @@ export const flow = {
         options : {
             0 : {
                 val : "10 years",
-                next: "6"
+                next: "8"
             },
             1 : {
                 val : "15 years",
-                next: "7"
+                next: "8"
             }
         }
     },
@@ -97,5 +97,15 @@ export const flow = {
                 next: ""
             }
         }
+    },
+    8 : {
+        question : "What is your name?",
+        type : "Name",
+        next: "9"
+    },
+    9 : {
+        question : "What is your e-mail address?",
+        type : "Email",
+        next: "6"
     }
   }

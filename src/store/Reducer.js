@@ -11,7 +11,7 @@ const Reducer = (state, action) => {
 
     if(action.type === 'refresh'){
         if(action.payload){
-            return {...state, 
+            return {
                 refresh: action.payload
             };
         }else {
