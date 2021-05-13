@@ -13,7 +13,7 @@ function Chat({number, state, dispatch}) {
     const onSubmit = () => {
       setAnswer(null);
       console.log(state);
-      dispatch({type: 'refresh'});
+      dispatch({type: 'submit'});
     }
     return (
     <div style={{}}>
@@ -23,15 +23,15 @@ function Chat({number, state, dispatch}) {
             Object.keys(flow[number].options).map(
                 (key) => (
                     flow[number].options[key].next ?
-                    (<div key={key} style={{paddingTop: '10px'}}
-                    onClick={() => onClickHandler(flow[number].options[key].val, flow[number].options[key].next)}>
+                    (<div key={key} style={{paddingTop: '10px'}} 
+                          onClick={() => onClickHandler(flow[number].options[key].val, flow[number].options[key].next)}>
+                          {flow[number].options[key].val}
+                    </div> ) : (
+                    <div key={key} style={{paddingTop: '10px'}} onClick={onSubmit}>
                         {flow[number].options[key].val}
-                        </div> ) : (
-                        <div key={key} style={{paddingTop: '10px'}} onClick={onSubmit}>
-                            {flow[number].options[key].val}
-                            </div> )
-                            ))
-                            }
+                    </div> )
+                    ))
+                    }
             {
                 nextQues && (
                     
