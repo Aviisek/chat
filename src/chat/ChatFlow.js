@@ -11,7 +11,7 @@ export const flow = {
                 next: "3"
             },
             2 : {
-                val : "Join engel and volkers",
+                val : "Join Our organization",
                 next: "8"
             },
             3 : {
